@@ -1,0 +1,546 @@
+.form-field.wsu-form-field .postform {
+    min-width: 200px;
+    width: 100%;
+}
+
+.wsu-short-url-list,
+.wsu-no-result {
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #ffffff8c;
+    cursor: pointer;
+    position: relative;
+}
+.wsu-no-result {
+    text-align: center;
+}
+.wsu-short-url-list:hover,
+.wsu-no-result:hover {
+    background: #dee9f1;
+}
+.wsu-active-item {
+    background: #dee9f1;
+}
+span.wsu-clicks-count {
+    width: 74%;
+    display: inline-block;
+}
+
+.wsu-short-url-list h1 {
+    margin-top: 5px;
+}
+
+.wsu-graph-view {
+    padding: 10px;
+    background: #ffffff8c;
+    float: left;
+    width: 95%;
+}
+
+.left-graph-view {
+    width: 65%;
+    float: left;
+    text-transform: capitalize;
+}
+.right-graph-view {
+    float: left;
+}
+
+.right-graph-view > span {
+    text-align: center;
+    font-size: 14px;
+    border-radius: 25px;
+    color: #5b9cd9;
+    border: 2px solid #5b9cd9;
+    padding: 2px 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.wsu-graph-fullurl {
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.wsu-graph-heading {
+    float: left;
+    width: 100%;
+    margin: 8px 0px;
+    color: #5b9cd9;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.wsu-graph-heading .wp-graph-url {
+}
+.wsu-graph-heading .wp-graph-actions {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
+.wsu-graph-heading .wp-graph-actions li {
+    margin-bottom: 0px;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.wsu-graph-heading .wp-graph-actions .wp-graph-action-copy button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.left-graph-view label {
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+input#searchshorturl {
+    width: 100%;
+}
+.searchurl {
+    height: 45px;
+}
+.wsu-customurl-wrap label {
+    width: 100%;
+    display: inline-block;
+}
+.site_url {
+    width: 30%;
+    float: left;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+.site_url_and_customUrl {
+    width: 70%;
+    float: left;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+
+.add-new-button {
+      background: #2381d8;
+      padding: 6px 10px 6px 10px;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      vertical-align: -webkit-baseline-middle;
+}
+.add-new-button:hover {
+      background: #106abd;
+      color: white;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    margin: 50px auto;
+    border: 1px solid #999;
+    width: 60%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 30px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form-field.wsu-form-field .postform {
+    padding: 2px 4px;
+}
+
+.hide {
+    display: none;
+}
+
+.tab-content {
+    padding: 25px;
+}
+
+#wsu-form-tabs {
+    position: relative;
+    display: block;
+    padding: 0;
+    border-bottom: 1px solid #e0e0e0;
+    width: 92%;
+}
+
+#wsu-form-tabs > a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #424f5a;
+    text-align: center;
+    outline: ;
+}
+
+#wsu-form-tabs > a.active {
+    font-weight: 700;
+    outline: none;
+}
+
+#wsu-form-tabs > a:not(.active):hover {
+    background-color: inherit;
+    color: #7c848a;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover .tooltipother {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltipother {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+@media only screen and (max-width: 520px) {
+    .nav-tabs#wsu-form-tabs > li > a {
+        font-size: 11px;
+    }
+}
+
+.yellow-bar {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    height: 3px;
+    background: #458cff;
+    display: block;
+    left: 0;
+    transition: left 0.2s ease;
+    -webkit-transition: left 0.2s ease;
+}
+
+#tab1-tab.active ~ span.yellow-bar {
+    left: 0;
+    width: 130px;
+}
+
+#tab2-tab.active ~ span.yellow-bar {
+    left: 165px;
+    width: 82px;
+}
+
+#tab3-tab.active ~ span.yellow-bar {
+    left: 304px;
+    width: 135px;
+}
+
+#tab4-tab.active ~ span.yellow-bar {
+    left: 392px;
+    width: 163px;
+}
+
+span#copytext {
+    cursor: pointer;
+}
+
+.wsu-post-type-main.form-field {
+    padding: 20px 0px 15px 0px;
+}
+
+span.wsu-autogerate {
+    width: 40%;
+    display: inline-block;
+}
+.wsu-custom-short-url-wrap {
+    display: none;
+}
+
+.form-field.wsu-form-field.form-required.wsu-custom-short-url-wrap.wsu-show-all {
+    margin-top: 15px;
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
+    vertical-align: top;
+}
+
+span.wsu-clicks-count {
+    width: 20%;
+    display: inline-block;
+    color: #5b9dd9;
+    text-align: right;
+    position: absolute;
+    top: 35%;
+    right: 8px;
+}
+
+input.CustomshortUrlInput {
+    width: auto !important;
+    margin-left: -6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-field.wsu-form-field label {
+    width: 95%;
+    display: inline-block;
+    margin: 6px 1px;
+}
+
+.input-group-text {
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2px 5px 6px 3px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.wsu-legend-cart {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+.wsu-legend-cart span {
+    padding: 5px 12px;
+    cursor: pointer;
+    border-bottom: 2px solid #ddd;
+}
+span.legend-label.active {
+    border-bottom: 2px solid;
+    color: #5a9bd9;
+}
+.wsu-select-categories {
+    width: 30%;
+    float: left;
+}
+.wsu-graph-title-action {
+    width: 100%;
+    float: left;
+}
+.wsu-select-categories select {
+    width: 99%;
+}
+.wsu-input-search-auto {
+    width: 70%;
+    float: left;
+}
+.site_url_and_customUrl select#wsu_categories {
+    width: 100%;
+}
+
+.wsu-categories-wrap select#wsu_categories {
+    width: 100%;
+}
+
+.wsu-list-first_row label {
+    width: 79%;
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.wsu-short-url-list > span {
+    line-height: 30px;
+    color: #5b9cd9;
+}
+@media (max-width: 1265px) {
+    .wsu-list-first_row label {
+        width: 77%;
+    }
+}
+
+@media (max-width: 991px) {
+    div#col-left {
+        padding-right: 15px;
+    }
+
+    .site_url_and_customUrl {
+        width: 100%;
+        float: none;
+    }
+    #modalOne .site_url_and_customUrl {
+        width: 100%;
+        float: none;
+    }
+    #modalOne .site_url {
+        width: 100%;
+        float: none;
+    }
+}
+@media (max-width: 767px) {
+    #modalOne .modal-content {
+        width: 95%;
+        background: #fff;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #modalOne input#wsu-custom-url {
+        margin-top: 15px;
+        margin-left: 3px;
+    }
+    #modalOne span.wsu-autogerate {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/**
+ *
+ */
+.wsu-category-wrapper {
+    padding-bottom: 10px;
+}
+button#wsu-add-category-btn {
+    margin-top: 9px;
+}
+.wsu-short-url-cat-list .wsu-category-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background: #ffffff8c;
+    min-height: 70px;
+}
+
+.wsu-short-url-cat-list .wsu-category-item .wsu--response-msg {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.wsu-short-url-cat-list .wsu-category-item .wsu-category-input {
+    width: 100%;
+    border: 1px solid;
+    background: transparent;
+    border-color: transparent;
+    margin-left: 5px;
+}
+.wsu-short-url-cat-list .wsu-category-item input.wsu-category-input.active {
+    border-color: #d1e4dd;
+    background: #d1e4dd;
+    border-radius: 0px;
+    width: 100%;
+    min-width: 200px;
+}
+
+.wsu-short-url-cat-list .wsu-category-item ul.wp-category-actions {
+    list-style: none;
+    display: flex;
+}
+.wsu-short-url-cat-list .wsu-category-item ul.wp-category-actions .wp-category-action-submit {
+    display: none;
+}
+
+.wsu-short-url-cat-list .wsu-category-item ul.wp-category-actions li {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+#wsu-shoturl-categories {
+    display: none;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#wsu-shoturl-categories .wsu--form-heading {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+#wsu-shoturl-categories .form-field.wsu--form-fields {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+#wsu-shoturl-categories .form-field.wsu--form-fields label {
+    font-size: 13px;
+}
+#wsu-shoturl-categories .form-field.wsu--form-fields #wsu__catname {
+    border: 1px solid #f2f2ff;
+    border-radius: 0;
+    font-size: 13px;
+}
+
+button#edittext , button#deletetext {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
